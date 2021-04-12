@@ -103,7 +103,7 @@ namespace NorthwindConsole
                     }
                       else if (choice == "4")
                     {
-                        var db = new Northwind_DotNetDb_JSGContext();
+                        var db = new NWConsole_96_IDContext();
                         var query = db.Categories.Include("Products").OrderBy(p => p.CategoryId);
                         foreach (var item in query)
                         {
